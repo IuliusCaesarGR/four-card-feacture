@@ -11,13 +11,140 @@ html {
 }
 
 body {
+  min-width: 320px;
   width: 100vw;
+  display: grid;
+  justify-items: center;
 }
 
 .contain {
-  width: 95vw;
+  width: 85%;
   display: grid;
-  justify-content: center;
+  margin: 4rem 0;
+}
+.contain__title {
+  color: hsl(234, 12%, 34%);
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+.contain__subtitle {
+  color: hsl(234, 12%, 34%);
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.contain__description {
+  color: hsl(212, 6%, 44%);
+  margin-bottom: 5rem;
+  font-size: 1.5rem;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 4rem;
+}
+.card__supervisor {
+  width: 100%;
+  height: 240px;
+  border-radius: 6px;
+  padding: 2.8rem;
+  box-shadow: 0px 9px 18px -9px hsl(212, 6%, 44%);
+  border-top: 3px solid hsl(180, 62%, 55%);
+}
+.card__supervisor h3 {
+  color: hsl(234, 12%, 34%);
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.card__supervisor p {
+  color: hsl(212, 6%, 44%);
+  font-size: 1.5rem;
+}
+.card__supervisor div {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.card__team {
+  width: 100%;
+  height: 240px;
+  border-radius: 6px;
+  padding: 2.8rem;
+  box-shadow: 0px 9px 18px -9px hsl(212, 6%, 44%);
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+.card__team h3 {
+  color: hsl(234, 12%, 34%);
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.card__team p {
+  color: hsl(212, 6%, 44%);
+  font-size: 1.5rem;
+}
+.card__team div {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.card__karma {
+  width: 100%;
+  height: 240px;
+  border-radius: 6px;
+  padding: 2.8rem;
+  box-shadow: 0px 9px 18px -9px hsl(212, 6%, 44%);
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+.card__karma h3 {
+  color: hsl(234, 12%, 34%);
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.card__karma p {
+  color: hsl(212, 6%, 44%);
+  font-size: 1.5rem;
+}
+.card__karma div {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.card__calculator {
+  width: 100%;
+  height: 240px;
+  border-radius: 6px;
+  padding: 2.8rem;
+  box-shadow: 0px 9px 18px -9px hsl(212, 6%, 44%);
+  border-top: 3px solid hsl(212, 86%, 64%);
+}
+.card__calculator h3 {
+  color: hsl(234, 12%, 34%);
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.card__calculator p {
+  color: hsl(212, 6%, 44%);
+  font-size: 1.5rem;
+}
+.card__calculator div {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .attribution {

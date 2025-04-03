@@ -1,10 +1,48 @@
 body{
+    min-width: 320px;
     width: 100vw;
+    display: grid;
+    justify-items: center;
     
 }
 .contain{
-    width: 95vw;
+    width: 85%;
     display: grid;
-    justify-content:center;
+    margin: 4rem 0;
+    &__title{
+        color: $color-title;
+        font-size: 2.5rem;
+        font-weight: 200;
+    }
+    &__subtitle{
+        color: $color-title;
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+    &__description{
+        color: $color-text;
+        margin-bottom: 5rem;
+        font-size: $sizeFont;
+    }
    
+}
+.card{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 4rem;
+    &__supervisor{
+        @include card($section-supervisor);
+       }
+       &__team{
+        @include card($section-team);
+       }
+       &__karma{
+        @include card($section-karma);
+       }
+       &__calculator{
+        @include card($section-calculator);
+       }
 }
